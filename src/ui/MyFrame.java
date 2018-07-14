@@ -33,7 +33,8 @@ public class MyFrame extends JFrame{
 	}
 	
 public static void  main(String [] args) {
-	 MyFrame myFrame=new  MyFrame();
+	 @SuppressWarnings("unused")
+	MyFrame myFrame=new  MyFrame();
 	
 	}
 }

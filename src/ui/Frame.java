@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+@SuppressWarnings("serial")
 public class Frame extends JFrame {    
 	public  Frame(){
 		this.setSize(500,200);
@@ -45,6 +46,7 @@ public class Frame extends JFrame {
 			this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	public static void main(String arg[]) {
+		@SuppressWarnings("unused")
 		Frame frame=new Frame();
 	}
 
