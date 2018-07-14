@@ -29,7 +29,7 @@ public class Frame extends JFrame {
 		button.addActionListener(
 				new  ActionListener(){
 					public void  actionPerformed(ActionEvent event) {
-						JOptionPane.showMessageDialog( null, ","+n1.getText()+","+n2.getText()+","+n3.getText()+","+n4.getText());
+						JOptionPane.showMessageDialog( null, n1.getText()+","+n2.getText()+","+n3.getText()+","+n4.getText());
 					}
 					
 				});

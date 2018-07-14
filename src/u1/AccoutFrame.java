@@ -14,14 +14,14 @@ import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
 public class AccoutFrame extends JFrame {
-	 private JButton buttonAdd=new JButton("add");
-    private JButton buttonDelete=new JButton("delete");
-    private JButton buttonbtnModify=new JButton("modify");
+	 private JButton btnAdd=new JButton("add");
+    private JButton btnDelete=new JButton("delete");
+    private JButton btnbtnModify=new JButton("modify");
     private JTextField text1=new  JTextField(); 
     private  JPanel  panelSearch=new JPanel();
     private  JPanel  panelPanecess=new JPanel();
     private  JTextField  txtSearch=new  JTextField();
-    private  JButton  buttonSearch=new  JButton("Seach");
+    private  JButton  btnSearch=new  JButton("Seach");
     private  JPanel panelAdd=new JPanel();
     JLabel m1=new JLabel("ÍøÕ¾:");
 	JTextField  n1=new  JTextField(50);
@@ -40,14 +40,14 @@ public class AccoutFrame extends JFrame {
          
       panelSearch.setLayout(new BorderLayout());  
       panelSearch.add(txtSearch);
-   	  panelSearch.add(buttonSearch,BorderLayout.EAST);
+   	  panelSearch.add(btnSearch,BorderLayout.EAST);
 	   
-		panelPanecess.add(buttonAdd);
-		panelPanecess.add(buttonDelete);
-		panelPanecess.add(buttonbtnModify);
+		panelPanecess.add(btnAdd);
+		panelPanecess.add(btnDelete);
+		panelPanecess.add(btnbtnModify);
        
 		
-    	buttonSearch.addActionListener(new  ActionListener(){
+    	btnSearch.addActionListener(new  ActionListener(){
 			public void  actionPerformed(ActionEvent event) {
 				JOptionPane.showMessageDialog( null, ""+txtSearch.getText());
 			}
@@ -63,12 +63,12 @@ public class AccoutFrame extends JFrame {
 		panelAdd.add(m4);
 		panelAdd.add(n4);
 		
-    buttonAdd.addActionListener(new ActionListener() {
+    btnAdd.addActionListener(new ActionListener() {
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-		  String text=buttonAdd.getText();
+		  String text=btnAdd.getText();
 		  if(text.equals("add")) {
 			  text="save";
 			  AccoutFrame.this.remove(panelSearch);
@@ -82,9 +82,9 @@ public class AccoutFrame extends JFrame {
 			  
 		  }
 		  
-		  buttonAdd.setText(text);
-		  buttonDelete.setText("cancel");
-		  buttonbtnModify.setVisible(false);
+		  btnAdd.setText(text);
+		  btnDelete.setText("cancel");
+		  btnbtnModify.setVisible(false);
 		  AccoutFrame.this.setVisible(false);
 		  AccoutFrame.this.setVisible(true);
 		}
